@@ -13,35 +13,35 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
+      title: 'Inicio',
+      url: '/inicio',
       icon: 'mail'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
+      title: 'Contactenos',
+      url: '/contactenos',
       icon: 'paper-plane'
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
+      title: '¿Quienes Somos?',
+      url: '/quienes-somos',
       icon: 'heart'
     },
-    {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
-    },
-    {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
-    },
-    {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
-    }
+//    {
+//      title: 'Archived',
+//      url: '/folder/Archived',
+//      icon: 'archive'
+//    },
+//    {
+//      title: 'Trash',
+//      url: '/folder/Trash',
+//      icon: 'trash'
+//    },
+//    {
+//      title: 'Spam',
+//      url: '/folder/Spam',
+//      icon: 'warning'
+//    }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-  }
+}
 
   ngOnInit() {
     const path = window.location.pathname.split('folder/')[1];
